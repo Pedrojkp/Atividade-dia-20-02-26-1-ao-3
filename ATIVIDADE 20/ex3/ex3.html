@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="ex3.js"></script>
+</head>
+<body>
+
+      <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        input {
+            padding: 6px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        img {
+            width: 250px;
+            transition: 0.3s;
+        }
+
+        .bloqueado {
+            filter: blur(8px);
+        }
+
+        .erro {
+            border: 2px solid red;
+            background-color: #ffe6e6;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Filme 16+</h2>
+
+<img id="cartaz" src="https://via.placeholder.com/250x350.png?text=FILME+16+" alt="Filme">
+
+<br><br>
+
+<div id="campos"></div>
+
+<button onclick="verificar()">Verificar Idades</button>
+
+<div id="resultado"></div>
+    
+</body>
+</html>
